@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="aki_action_sales_dashboard" model="ir.actions.client">
+            <field name="name">Bảng thống kê bán hàng</field>
+            <field name="tag">aki_dashboard.AkiSaleDashboard</field>
+        </record>
+
+        <menuitem name="AKi Custom Dashboard" id="menu_aki_dasboard" sequence="10">
+            <menuitem name="Thống kê bán hàng" id="menu_sales_dashboard" sequence="10" action="aki_action_sales_dashboard"></menuitem>
+        </menuitem>
+    </data>
+</odoo>

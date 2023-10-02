@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-name="aki_dashboard.AkiChart" owl="1">
+        <canvas t-ref="chart"></canvas>
+    </t>
+</templates>
