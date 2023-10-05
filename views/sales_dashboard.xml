@@ -7,7 +7,7 @@
         </record>
 
         <menuitem name="AKi Custom Dashboard" id="menu_aki_dasboard" sequence="10">
-            <menuitem name="Thống kê bán hàng" id="menu_sales_dashboard" sequence="10" action="aki_action_sales_dashboard"></menuitem>
+            <menuitem name="Bảng hiệu suất bán hàng" id="menu_sales_dashboard" sequence="10" action="aki_action_sales_dashboard"></menuitem>
         </menuitem>
     </data>
 </odoo>
