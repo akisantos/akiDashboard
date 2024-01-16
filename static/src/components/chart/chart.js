@@ -68,12 +68,16 @@ export class ChartRenderer extends Component{
                 tooltip: {
                     callbacks: {
                         label: function(tooltipItem) {
-                          return 'Sản phẩm: ' + nameLabels[tooltipItem.dataIndex]
+                          return 'Đơn hàng: ' + nameLabels[tooltipItem.dataIndex]
                         },
                         title: function(tooltipItem){
                           return 'Doanh thu: ' + chartData.at(tooltipItem.dataIndex).y;
                         }
                     }
+                },
+                colors: {
+                  enabled: true,
+                  forceOverride: true
                 }
             },
           

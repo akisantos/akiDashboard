@@ -1,1 +1,1 @@
-from . import res_partner
+from . import tiktok_controller

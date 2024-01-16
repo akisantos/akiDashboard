@@ -6,8 +6,15 @@
             <field name="tag">aki_dashboard.AkiSaleDashboard</field>
         </record>
 
-        <menuitem name="AKi Custom Dashboard" id="menu_aki_dasboard" sequence="10">
+        <record id="aki_action_tiktok_dashboard" model= "ir.actions.client">
+
+            <field name="name">Bảng thống kê Tiktok</field>
+            <field name="tag">aki_dashboard.TikTokDashboard</field>
+        </record>
+
+        <menuitem name="Aki OmniSales" id="menu_aki_dasboard" sequence="10">
             <menuitem name="Bảng hiệu suất bán hàng" id="menu_sales_dashboard" sequence="10" action="aki_action_sales_dashboard"></menuitem>
+            <menuitem name="Bảng thống kê Tiktok" id="menu_tiktok_dashboard" sequence="11" action="aki_action_tiktok_dashboard"></menuitem>
         </menuitem>
     </data>
 </odoo>

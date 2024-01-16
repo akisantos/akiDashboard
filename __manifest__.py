@@ -16,7 +16,7 @@
         'purchase'
     ],
     'data':[
-        'views/sales_dashboard.xml'
+        'views/sales_dashboard.xml',
     ],
     'installable': True,
     'application': True,

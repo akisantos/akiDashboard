@@ -66,6 +66,7 @@ export class AkiSaleDashboard extends Component{
 
     }
     
+    
     async getOrders(){
         let domain = [['state','in',['done', 'sale']]];
         let prevDomain = [['state','in',['done', 'sale']]];
@@ -84,7 +85,7 @@ export class AkiSaleDashboard extends Component{
         let invoicedDomain = domain;
         invoicedDomain.push(['invoice_status', 'in' ,['invoiced', 'to invoice']])
         const invoicedOrderCount = await this.orm.searchCount('sale.order', invoicedDomain);
-
+        
         //Tính revenue
         let prevRevenueDomain = prevDomain;
         prevRevenueDomain.push(['invoice_status', 'in',['invoiced', 'to invoice']])
@@ -140,7 +141,7 @@ export class AkiSaleDashboard extends Component{
     }
     async GetBestSellerChart(){
         let domain = [['state', 'in', ['done', 'sale']]]
-        
+
         domain.push(['invoice_status', 'in' ,['invoiced', 'to invoice']])
         if (this.state.period >0){
             domain.push(['date_order','>=',this.state.currentDate])
@@ -164,6 +165,9 @@ export class AkiSaleDashboard extends Component{
             label: saleListLabels,
             data: saleList,
         }
+
+
+        console.log(this.state.saleData);
 
     }
 }
